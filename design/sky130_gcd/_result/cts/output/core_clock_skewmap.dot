@@ -1,0 +1,14 @@
+digraph clocktree {
+clk[label="clk fanout 2" ]
+clk -> clk_0_buf
+clk_0_buf[label="clk_0_buf delay 0.000084 fanout 1" ]
+clk_0_buf[label="clk_0_buf fanout 1" ]
+clk_0_buf -> dpath_a_reg__137__CLK
+dpath_a_reg__137__CLK[label="dpath_a_reg__137__CLK delay 0.343322 fanout 0" ]
+clk[label="clk fanout 2" ]
+clk -> clk_1_buf
+clk_1_buf[label="clk_1_buf delay 0.000084 fanout 1" ]
+clk_1_buf[label="clk_1_buf fanout 1" ]
+clk_1_buf -> ctrl_state__14__CLK
+ctrl_state__14__CLK[label="ctrl_state__14__CLK delay 0.333643 fanout 0" ]
+}
